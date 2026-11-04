@@ -1,18 +1,39 @@
-# Kumararyan1 Battdoctor
+# Homebrew tap for battdoctor
 
-## How do I install these formulae?
+Energy-first battery and performance monitor for Apple Silicon Macs.
 
-`brew install kumararyan1/battdoctor/<formula>`
+## Install
 
-Or `brew tap kumararyan1/battdoctor` and then `brew install <formula>`.
-
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "kumararyan1/battdoctor"
-brew "<formula>"
+```bash
+brew tap kumararyan1/battdoctor
+brew trust kumararyan1/battdoctor
+brew install --cask battdoctor
 ```
 
-## Documentation
+The cask installs the menu bar app and depends on the `battdoctor` formula, which installs the
+CLI under the Homebrew prefix. The app finds that CLI automatically.
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+## CLI only
+
+```bash
+brew install kumararyan1/battdoctor/battdoctor
+```
+
+## Optional powermetrics helper
+
+```bash
+sudo "$(brew --prefix battdoctor)/share/battdoctor/install_helper.sh"
+```
+
+## Uninstall
+
+```bash
+brew uninstall --cask battdoctor
+brew uninstall battdoctor
+```
+
+Remove local data with:
+
+```bash
+rm -rf "~/Library/Application Support/battdoctor" ~/.battdoctor
+```
