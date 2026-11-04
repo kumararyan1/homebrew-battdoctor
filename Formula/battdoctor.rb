@@ -3,8 +3,8 @@ class Battdoctor < Formula
 
   desc "Local macOS battery and performance diagnostics"
   homepage "https://github.com/kumararyan1/battdoctor"
-  url "https://github.com/kumararyan1/battdoctor/releases/download/v0.1.2/battdoctor-0.1.2.tar.gz"
-  sha256 "adcb6711fb6f87cc7e2fd8bdbb09dd785391a52719306baf41ab902795e7e193"
+  url "https://github.com/kumararyan1/battdoctor/releases/download/v0.1.3/battdoctor-0.1.3.tar.gz"
+  sha256 "3c90a86f77708ef9da00164a88798eb98e55409fc350178e882ee49a598bf63c"
   license "MIT"
 
   depends_on "python@3.12"

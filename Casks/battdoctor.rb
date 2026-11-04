@@ -1,6 +1,6 @@
 cask "battdoctor" do
-  version "0.1.2"
-  sha256 "c5b06066d120c8c4ed7841556918760f43a48c5e6b22567451255a26d6d6f367"
+  version "0.1.3"
+  sha256 "134ad25e1ebd442c163e7993e596f9fcc2736dc84aa6f5726ae55a7ec8a5a850"
 
   url "https://github.com/kumararyan1/battdoctor/releases/download/v#{version}/Battdoctor.app.zip"
   name "Battdoctor"
